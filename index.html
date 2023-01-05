@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio Web</title>
+    <link rel="stylesheet" href="./CSS/Bootstrap/bootstrap.min.css">   
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/diseñoGral.css">
+    
+  
+    <link rel="icon" type="icon/x-image" href="./IMG/logo-tienda.svg">
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+        <img src="./IMG/logo-tienda.svg" alt="Este es un logo">
+    </div>
+
+    <div class="carrito-comp">
+        <div>
+            <a href="Carrito.html">
+                <img src="./IMG/icono-carrito.svg" alt="Carrito de compras" >
+            </a>
+        </div>
+    </div>
+
+    <div class="grupo-botones">
+      <button
+        type="button"
+        class="abrir-modal"
+        data-open="modal-presentacion"
+        id="primerModal">
+        Ingresar
+      </button>         
+   <button class="botonSalir"  type="button"  id="btnSalir">Cerrar sesión</button>
+    </div>
+
+</header>
+
+
+<div class="header-nav">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Principal</a>
+            </li>
+
+            <li><a href="./html/Camisas.html">Camisas</a>
+            </li>
+
+            <li><a href="./html/Bufandas.html">Bufandas</a>
+            </li>
+
+            <li><a href="./html/Faldas.html">Faldas</a>
+            </li>
+
+            <li id="liDerecha"><a href="./html/contacto.html">Contacto</a>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+
+  <!--MODAL PARA LOGIN-->
+  
+
+<div id="modal-presentacion" class="modal">
+  <div class="modal-contenido">
+     <header>
+         <button class="cerrar-modal" data-close="modal-presentacion" >X</button>
+      </header>
+      <br>
+      <br>
+          <h4>Iniciar sesion</h4>           
+          <input type="text"  id="floatingInput" placeholder="USUARIO">
+          <br>
+          <input type="password" id="floatingPassword" placeholder="CONTRASEÑA">       
+          <br>
+          <br>
+          <button type="button" id="btnSignIn">Ingresar</button>
+
+          <br>
+          
+          <p>¿No tienes un usuario?<button type="button"  id="btnAbrir-modal2">Registrate</button></p>
+        </div>
+</div>
+
+
+<!--MODAL PARA REGISTRO-->
+
+<div id="modal-presentacion2" class="modal2">
+<div class="modal-contenido2">
+   <header>
+       <button class="cerrar-modal2" id="btncerrar-modal2" >X</button>
+   </header>
+   <br>
+   <p>Con tu registro obtenes un cupon de descuento<br>
+    y muchos beneficios más!
+  </p>
+  <label>Nombre y apellido</label>
+  <br>
+  <input type="text" id="txtNombre">
+  <br>
+  <label>Email</label>
+  <br>
+  <input type="email"  id="txtEmail">
+  <br>
+  <label>Usuario</label>
+  <br>
+  <input type="text" id="txtUsuario">       
+  <br>
+  <label>Clave</label>
+  <br>
+  <input type="password" id="txtClave">       
+  <br>
+  <button type="button"  id="btnAbrir-modal3" >Registrarme</button>
+  <br>
+</div>
+</div>
+
+
+<!--MODAL PARA REGISTRO-->
+
+<div id="modal-presentacion3" class="modal3">
+<div class="modal-contenido3">
+   <header>
+  
+   </header>
+   <br>
+   <p>¡Registro exitoso!</p>
+   <p>Te enviaremos un correo con tu cupon
+    de bienvenida
+   </p>
+
+   <button  type="button" id="btnAbrir-modal4" >Volver a inicio</button>
+
+</div>
+</div>
+
+  <div class="contenido2">
+    <div class="foto-imagen">
+      <h2><u>Bienvenidos a Tienda</u></h2>
+    </div>
+
+    <div class="segmentoInfo"><br>
+      <h2><u>Formas de pago</u></h2> <br>
+    <div class="pagos">
+      <div><img src="./IMG/envios.svg" alt="" height="90">
+      <h3>Tienda Envios</h3></div>
+      <div><img src="./IMG/tarjeta.svg" alt="" height="90">
+      <h3>Trabajamos con todas las tarjetas</h3></div>
+      <div><img src="./IMG/porcentaje.svg" alt="" height="90">
+      <h3>Promociones con</h3></div>
+    </div><hr>
+      <div class="Destacados">
+        <h2><u>Mas Destacados</u></h2>  <br> <br>
+      </div>
+      <div class="imagenes">
+        <div ><img class="foto" src="./IMG/faldaC.jpg" alt="" height="310" ></div>
+        <div ><img class="foto" src="./IMG/camisa.png" alt="" height="310"></div>
+        <div ><img class="foto" src="./IMG/BfM.png" alt="" height="310"></div> 
+      </div> <br><hr>
+      
+
+      <div class="Formulario">
+        <form action="">
+          <fieldset>
+            <legend>Suscribete a nuestro boletin de noticias</legend>
+            <label for="text">Email:</label>
+              <input type="email">
+              <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>  
+    <!--------------------footer --------------------->
+      <footer class="text-center pt-5">
+        <!-- Grid container -->
+        <div class="container-fluid  p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4 ">
+              <h5 class="text-uppercase mb-0 mb-3">Nuestros Productos</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="./html/Camisas.html" class="text-dark">Camisas</a>
+                </li>
+                <li>
+                  <a href="./html/Bufandas.html" class="text-dark">Bufandas</a>
+                </li>
+                <li>
+                  <a href="./html/Faldas.html" class="text-dark">Faldas</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4 ">
+              <h5 class="text-uppercase mb-3">Contactanos</h5>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark me-0">
+                    <i class="fa-solid fa-mobile-retro mr-2"></i>
+                    541144114477
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark ms-4">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Text@hotmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark me-0">
+                    <i class="fa-solid fa-location-pin"></i>
+                    San justo,Bs As</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4">
+              <h5 class="text-uppercase  mb-3">Seguinos</h5>
+      
+              <ul class="list-unstyled d-inline-flex  ms-3">
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" id="copyright">
+           <a class=" text-dark text-uppercase ">   © 2022 Copyright  </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+     
+   
+  
+
+
+    
+    <script src="./JS/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="./JS/Bootstrap/bootstrap.min.js"></script>
+    <script src="./JS/Inventario.js"></script>
+    
+    <script src="./JS/Base.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/registro.js"></script>
+    <script src="./JS/Login.js"></script>
+   
+    <script
+    src="https://kit.fontawesome.com/d4827d7cda.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

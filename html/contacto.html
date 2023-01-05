@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon/x-image" href="../IMG/logo-tienda.svg" />
+    <link rel="stylesheet" href="../CSS/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../CSS/diseñoGral.css">
+    <link rel="stylesheet" href="../CSS/contacto.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <!-- ******************Header********************-->
+    <header>
+      <div class="header-logo">
+          <img src="../IMG/logo-tienda.svg" alt="Este es un logo">
+      </div>
+  
+      <div class="carrito-comp">
+          <div>
+              <a href="./Carrito.html">
+            
+                  <img src="../IMG/icono-carrito.svg" alt="Carrito de compras" >
+              </a>
+          </div>
+      </div>
+  
+  </header>
+  
+  
+  <div class="header-nav">
+      <nav>
+          <ul>
+              <li><a href="../index.html">Principal</a>
+              </li>
+  
+              <li><a href="./Camisas.html">Camisas</a>
+              </li>
+  
+              <li><a href="./Bufandas.html">Bufandas</a>
+              </li>
+  
+              <li><a href="./Faldas.html">Faldas</a>
+              </li>
+  
+              <li id="liDerecha"><a href="./contacto.html">Contacto</a>
+              </li>
+  
+          </ul>
+      </nav>
+  </div>
+
+    <!-- ******************section img contacto formulario********************-->
+
+    <section id="titulo-form" class="container-fluid">
+      <div class="row">
+        <img
+          class="mt-5 img-fluid"
+          id="imagen-titulo"
+          src="../IMG/CONTACTO_free-file (1).png"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- ******************section  formulario********************-->
+
+    <section class="container-fluid contenedor-form">
+      <div class="mt-5 div-contenido">
+        <!--row grid-->
+        <form class="row" action="#!">
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-4">
+            <label class="display-6" for="txtNombre"> <em> Nombre</em> </label>
+            <input
+              autocomplete="txtNombre"
+              type="text"
+              name="txtNombre"
+              id="txtNombre"
+              placeholder="Ingresa tu nombre"
+              required
+              minlength="0"
+              maxlength="30"
+            />
+          </div>
+          <!--col grid-->
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-4">
+            <label class="display-6" for="txtApellido">
+              <em> Apellido</em>
+            </label>
+            <input
+              autocomplete="txtApellido"
+              type="text"
+              name="txtApellido"
+              id="txtApellido"
+              placeholder="Ingresa tu apellido"
+              required
+              minlength="0"
+              maxlength="30"
+            />
+          </div>
+          <!--col grid-->
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-4">
+            <label class="display-6" for="txtEmail"> <em> Email</em> </label>
+            <input
+              autocomplete="txtEmail"
+              type="email"
+              pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+              title="formato de correo invalido"
+              name="txtEmail"
+              id="txtEmail"
+              placeholder="Ingresa tu Email"
+              required
+              minlength="0"
+              maxlength="40"
+            />
+          </div>
+          <!--col grid-->
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-4">
+            <label class="display-6" for="txtAsunto"> <em> Asunto</em> </label>
+            <input
+              autocomplete="txtAsunto"
+              type="text"
+              name="txtAsunto"
+              id="txtAsunto"
+              placeholder="Asunto"
+              required
+              minlength="0"
+              maxlength="150"
+            />
+          </div>
+          <!--col grid-->
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-5">
+            <label class="display-6" for="txtMensaje">
+              <em> Mensaje </em>
+            </label>
+            <textarea
+              rows=""
+              cols=""
+              id="txtMensaje"
+              name="txtMensaje"
+              minlength="0"
+              maxlength="300"
+            >
+            </textarea>
+          </div>
+
+          <!--col grid-->
+          <!--col grid-->
+          <div class="col-md-12 col-lg-12 col-sm-12 div-cont mt-5">
+            <button class="mt-3 mb-5 btn" id="enviar" type="submit">
+              enviar
+            </button>
+          </div>
+          <!--col grid-->
+        </form>
+        <!--row grid-->
+      </div>
+    </section>
+
+    <!--------------------footer --------------------->
+    <footer class="text-center pt-5">
+      <!-- Grid container -->
+      <div class="container-fluid p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4">
+            <h5 class="text-uppercase mb-0 mb-3">Nuestros Productos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="./Camisas.html" class="text-dark">Camisas</a>
+              </li>
+              <li>
+                <a href="./Bufandas.html" class="text-dark">Bufandas</a>
+              </li>
+              <li>
+                <a href="./Faldas.html" class="text-dark">Faldas</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4">
+            <h5 class="text-uppercase mb-3">Contactanos</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-dark me-0">
+                  <i class="fa-solid fa-mobile-retro mr-2"></i>
+                  541144114477
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark ms-4">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  Text@hotmail.com
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark me-0">
+                  <i class="fa-solid fa-location-pin"></i>
+                  San justo,Bs As</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-4 mb-4">
+            <h5 class="text-uppercase mb-3">Seguinos</h5>
+
+            <ul class="list-unstyled d-inline-flex ms-3">
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="pe-4">
+                <a href="#!" class="text-dark">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" id="copyright">
+        <a class="text-dark text-uppercase"> © 2022 Copyright </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/d4827d7cda.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../JS/Bootstrap/bootstrap.min.js"></script>
+  </body>
+</html>

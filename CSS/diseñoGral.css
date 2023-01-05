@@ -1,0 +1,210 @@
+/*---------------------------------------------------*/
+/*                COLORES Y FUENTES
+/*---------------------------------------------------*/
+:root
+{
+    --ColorPrincipal:  #FCD5CE;
+    --ColorSecundario: #FFB5A7;
+    --ColorVerde: #799e8a;
+    --ColorDetalles: #FEC89A;
+}
+
+@font-face {
+    font-family: 'FuenteParrafos';
+    src: url(../fuentes/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Cursiva';
+    src: url(/fuentes/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Titulos';
+    src: url(/fuentes/WalterTurncoat-Regular.ttf);
+}
+
+
+/*---------------------------------------------------*/
+/*                     GENERAL
+/*---------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------------*/
+/*                      HEADER
+/*---------------------------------------------------*/
+
+header
+{
+    position: relative;
+    height:100px;
+    width: 100%;
+    display: flex;
+    background-color: var(--ColorPrincipal);
+    font-family: 'FuenteParrafos';
+}
+
+header .header-logo
+{
+    height: 100px;
+    width: 100%;
+    flex: 80%;
+}
+
+header .header-logo img
+{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+}
+
+header .grupo-botones
+{
+    flex: 10%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 15px;
+}
+
+header .grupo-botones button
+{
+    border: none;
+    background-color: var(--ColorPrincipal);
+    color: rgb(35, 107, 107);
+}
+
+header .grupo-botones button:hover
+{
+    font-weight: bold;
+}
+
+.header-nav nav{
+    height: 54px;
+    width: 100%;
+    font-family: 'FuenteParrafos';
+}
+
+
+.header-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--ColorSecundario);
+}
+
+.header-nav nav ul li {
+    float: left;
+    border-right: 1px solid #444;
+}
+
+.header-nav nav ul li:last-child {
+    border-right: none;
+}
+
+#liDerecha {
+    float: right;
+}
+
+.header-nav nav ul li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 15px 26px;
+    text-decoration: none;
+}
+
+.header-nav nav ul li a:hover {
+    background-color: var(--ColorPrincipal);
+    font-weight: bold;
+}
+
+.carrito-comp
+{
+    flex: 10%;
+    padding: 15px 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.carrito-comp img
+{
+    width: 30px;
+}
+
+.textos-seccion 
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Titulos';
+}
+
+
+/*---------------------------------------------------*/
+/*                      FOOTER
+/*---------------------------------------------------*/
+
+footer{
+    background-color:  var(--ColorPrincipal);
+    border-top: 30px solid black;
+    font-family: 'Titulos';
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'FuenteParrafos';
+}
+
+footer ul li a:hover
+{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#copyright a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.fa-brands{
+    font-size:2.5rem;
+}
+.fa-solid {
+    font-size:1.1rem;
+}
+
+/*---------------------------------------------------*/
+/*                     MEDIA
+/*---------------------------------------------------*/
+ 
+@media (max-width: 605px) {
+    .header-nav{
+       display: flex;
+       flex-direction: column;
+       
+    }
+
+    .header-nav nav{
+        height: 200px;
+     }
+}
+
+/* me permite hacer esos cambios  de estado en el login*/
+.botonSalir{
+    visibility: hidden;
+   }
+   .ocultar{
+   visibility:hidden;
+   width:0%;
+   }
+   .mostrar{
+       visibility: visible;
+       width:100%;
+   }

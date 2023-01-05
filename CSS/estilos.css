@@ -1,0 +1,265 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header-------------------------------------------------------*/
+header{
+    position: relative;
+    height:100%;
+    width: 100%;
+    display: flex;
+}
+
+header .header-logo
+{
+    background-color: #C8A689;
+    height: 100px;
+    width: 100%;
+    flex: 90%;
+}
+
+header .header-logo img{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+}
+
+.header-nav nav{
+    background-color: slategray;
+    height: 54px;
+    width: 100%;
+}
+
+.header-nav{
+    width: 100%;
+}
+
+.header-nav nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header-nav nav ul li {
+    float: left;
+    border-right: 1px solid #444;
+    
+}
+.header-nav nav ul li:last-child {
+    border-right: none;
+}
+
+#liDerecha {
+    float: right;
+}
+
+.header-nav nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px 26px;
+    text-decoration: none;
+}
+
+.header-nav nav ul li a:hover {
+    background-color: rgba(214, 190, 152, 0.666);
+}
+
+.carrito-comp
+{
+    flex: 10%;
+    background-color: #C8A689;
+}
+
+.carrito-comp img
+{
+    width: 40px;
+    position: relative;
+    top: 35px;
+    left: 25px;
+}
+
+.textos-seccion 
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/*--------PRODUCTOS--------------------------------------*/
+
+.producto
+{
+    height: 300px;
+    margin: 35px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.producto:hover
+{
+    border: 1px solid rgb(104, 98, 119);
+    cursor: pointer;
+}
+
+.contenedor-img
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-img img
+{
+    width: 90%;
+}
+
+.contenedor-boton
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-boton button
+{
+    margin-top: 10px;
+    padding: 5px 5px;
+    background-color: #C8A689;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+}
+
+.contenedor-boton button:hover
+{
+    background-color: #e6d7ca;
+    border: 1px solid rgb(92, 84, 74);
+}
+
+/*----------seccion filtro-----------------------------------*/
+
+.seccion-filtro
+{
+    width: 100%;
+    border-bottom: solid 1px rgb(187, 176, 176);
+    margin: 35px 0px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-filtrar
+{
+    padding: 5px 5px;
+    margin-left: 20px;
+    background-color: #f0caa9;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+}
+
+/*----------MODAL-----------------------------------*/
+
+.modal-producto
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(43, 43, 43, 0.568);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenedor-modal
+{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    margin-top: 5%;
+}
+
+.contenedor-img-modal
+{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-img-modal img
+{
+    width: 40%;
+}
+
+.descripcion-prod
+{
+    text-align: center;
+}
+
+.precio-prod
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor-boton-modal
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-boton-modal button
+{
+    margin-right: 15px;
+    margin-top: 15px;
+    padding: 5px 5px;
+    background-color: #C8A689;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+}
+
+.contenedor-boton-modal button:hover
+{
+    background-color: #e0c4aa;
+    border: 1px solid rgb(66, 66, 65);
+}
+
+.contenedor-botonC-modal
+{
+    width: 100%;
+}
+
+.contenedor-botonC-modal button
+{
+    width: 50px;
+    float: right;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    background-color: #C8A689;
+    border-radius: 5px;
+    border: 1px solid burlywood;
+}
+
+.es-visible
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.ver-carrito a
+{
+    text-decoration: none;
+    color: black;
+}
+/*------------------------------------------------------/

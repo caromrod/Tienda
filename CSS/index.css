@@ -1,0 +1,323 @@
+/*---------------------------------------------------*/
+/*                COLORES Y FUENTES
+/*---------------------------------------------------*/
+:root
+{
+    --ColorPrincipal:  #FCD5CE;
+    --ColorSecundario: #FFB5A7;
+    --ColorVerde: #799e8a;
+    --ColorDetalles: #FEC89A;
+    --ColorFondo: #F8EDEB;
+}
+
+@font-face {
+    font-family: 'FuenteParrafos';
+    src: url(../fuentes/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Cursiva';
+    src: url(/fuentes/Courgette-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Titulos';
+    src: url(/fuentes/WalterTurncoat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Coure';
+    src: url('./fuentes/Courgette-Regular.ttf');
+}
+
+
+
+/*---------------------------------------------------*/
+/*                MODAL LOGIN
+/*---------------------------------------------------*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+
+    flex-direction: column;
+}
+
+.modal-presentacion, .es-visible{
+    opacity: 1;
+    visibility:visible;
+}
+
+
+.modal .modal-contenido{
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 450px;
+    background-color: pink;
+    cursor:default;
+    border-radius: 20px;
+}
+
+.modal .modal-contenido input{
+    height: 1cm;
+    width: 40%; 
+    text-align:center;
+
+    justify-content: center;
+    margin-bottom: 0.5cm;
+}
+.modal header{
+  justify-content: center;
+  box-shadow: 0px 0px 20px 0px rgba(248, 248, 248, 0.5);
+}
+.modal .modal-contenido #btnSignIn{
+    width: 20%;
+    height: 1cm;
+    text-align:center;
+    background-color: papayawhip;
+    border: 1px solid black;
+    color: black;
+    font-size: 1em;
+}
+
+.modal .modal-contenido #btnAbrir-modal2{
+    border: none;
+    background-color: pink;
+    color: blue;
+}
+
+.modal .modal-contenido header .cerrar-modal{
+    font-size: 0.5rem;
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ffc0c000;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: initial;
+    margin-top:5px;
+}
+
+/*modal de REGISTRO*/
+.modal2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+}
+
+.modal-presentacion2, .es-visible2{
+    opacity: 1;
+    visibility:visible;
+}
+
+
+.modal2 .modal-contenido2{
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 540px;
+    background-color: pink;
+    cursor:default;
+    border-radius: 20px;
+}
+.modal-contenido2 header #btncerrar-modal2 {
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ffc0c000;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    font-size: initial;
+    margin-top:5px;
+}
+.modal-contenido2 header{
+    display: flex;
+    justify-content:center;
+    margin-top:5px;
+    box-shadow: 0px 0px 20px 0px rgba(248, 248, 248, 0.5);
+}
+.btncerrar-modal2 p{
+
+    font-size: medium;
+}
+label {
+    font-weight: bold;
+}
+
+.modal2 .modal-contenido2 input{
+    height: 0.75cm;
+    width: 40%; 
+    text-align:center;
+
+    margin-bottom: 0.5cm;
+}
+
+.modal2 .modal-contenido2 #btnAbrir-modal3{
+    width: 20%;
+    height: 1cm;
+    text-align:center;
+    background-color: papayawhip;
+    border: 1px solid black;
+    color: black;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.modal2 .modal-contenido2 header .btncerrar-modal2{
+    font-size: 0.5rem;
+ 
+}
+
+/*MODAL 3 DE REGISTRO EXITOSO*/
+.modal3{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+}
+
+.modal-presentacion3, .es-visible3{
+    opacity: 1;
+    visibility:visible;
+}
+
+
+.modal3 .modal-contenido3{
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: 450px;
+    background-color: pink;
+    cursor:default;
+    border-radius: 20px;
+}
+
+
+.modal3 .modal-contenido3 input{
+    height: 0.75cm;
+    width: 40%; 
+    text-align:center;
+
+    margin-bottom: 0.5cm;
+}
+
+#btnAbrir-modal4{
+    width: 20%;
+    height: 1cm;
+    text-align:center;
+    background-color: papayawhip;
+    border: 1px solid black;
+    color: black;
+    font-size: 1em;
+}
+
+/*SECCION 1 FOTO DE BIENVENIDA*/
+.foto-imagen{
+    background-image: url('../IMG/tienda.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.foto-imagen h2
+{
+    color: var(--ColorFondo);
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+/*SECCION 2: FORMAS DE PAGO*/
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+    font-family: 'Titulos';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    top: 50%;  
+}
+
+.contenido2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.segmentoInfo{
+    background-color: var(--ColorFondo);
+    width: 100%;
+    height: 100%;
+}
+
+.segmentoInfo h2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.pagos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    font-size: 50px;
+    width: 100%;
+    height: 500px;
+}
+
+.Destacados{
+    display: flex;
+    flex-direction: column;
+}
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 55px;
+    width: 100%;
+}
+.foto{
+    background-color: #fff;
+    border-radius: 50%;
+    border-style: groove;
+}
+
+/*FORMULARIO PARA SUSCRIPCION*/
+.Formulario{
+    display: flex;
+    font-family: 'Coure';
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 50px;
+    width: 100%;
+    height: 500px;
+}

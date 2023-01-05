@@ -1,0 +1,177 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*****************fondo color*****************/
+section{
+    background-color:rgba(252, 220, 225, 0.864);
+    cursor: pointer;
+
+}
+
+
+/************evento active cuando visite la pagina******************/
+.active{
+  font-weight: bold;
+}
+
+/************ img contacto ***********************/
+
+#imagen-titulo{
+    width:300px;
+    height:100px;
+}
+ #titulo-form{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+/***********************formulario*****************************/
+
+     .contenedor-form,.div-cont{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div-contenido{
+        width: 100%;
+      }
+      form{
+        padding:5px 10px 0px 10px;
+      }
+      .display-6{
+        font-size: 1.5rem;
+        padding-top: 10px;
+        margin-left: -10px;
+        margin-right: 50px;
+    
+      }
+      label{
+        margin-right: 25px;
+        font-weight: 600;
+        font-family:monospace;
+        width:7%;
+      }
+      input[type="text"],input[type="email"]{
+        outline: none; /* saca los  bordes de los input */
+        border:0px;
+        border-bottom:2px solid black;
+        width:40%;
+        background-color: rgb(251 184 196 / 0%);
+      }
+      textarea{
+        outline: none;
+        border:0px;
+        border-bottom:2px solid black;
+        width:41%;
+        background-color: rgb(251 184 196 / 0%);
+        resize: none;
+      }
+      input[type="text"]:hover, input[type="text"]:checked ,input[type="email"]:hover,input[type="email"]:checked{
+        border:0px;
+        border-bottom:2px solid black;
+      }
+
+      input::placeholder{
+        font-weight: 600;
+        margin-right: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        color:black;
+      }
+
+      #enviar{
+        width: 70px;
+        height:50px;
+        border:0px;
+        font-weight: 600;
+        font-family: 'Coure';
+        border-radius: 50px;
+        background-color: #090a0a;
+        color:white;
+      }
+      #enviar:hover{
+        transition-property: background-color,color;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        -webkit-transition-property: background-color,color;
+        -webkit-transition-duration: 1s;
+        -o-transition-property: background-color,color;
+        -o-transition-duration: 1s;
+        background-color:rgba(162, 0, 162, 0.655);
+        color:white;
+      }
+
+      input::-webkit-input-placeholder {
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+       }
+       
+       input:focus::-webkit-input-placeholder{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+        visibility: visible !important;
+       }
+
+
+
+
+
+/************************eventos de validacion del formulario**************/
+textarea:invalid {
+  border: 2px solid red;
+}
+
+
+
+
+/*********************responsive***************************/
+
+@media only screen and (max-width: 576px){
+
+    .contenedor-form,.div-cont{
+        display: flex;
+        flex-direction: column;
+      }
+      textarea{
+        padding-top: 5px;
+        width: 100%;
+      }
+      input[type="text"],input[type="email"]{
+        outline: none;
+        border:0px;
+        border-bottom:2px solid black;
+        width:100%;
+        background-color: rgb(251 184 196 / 0%);
+      }
+
+      em{
+        padding-top:5%;
+      }
+  
+}
+
+
+@media only screen and (max-width: 1000px){
+    textarea{
+      padding-top: 5px;
+    }
+    input[type="text"],input[type="email"],textarea{
+      outline: none;
+      border:0px;
+      border-bottom:2px solid black;
+      background-color: rgb(251 184 196 / 0%);
+      width:55%;
+    }
+    label{
+      width:12%;
+    }
+
+    em{
+      padding-top:5%;
+    }
+
+}

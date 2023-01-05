@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johana Araya">
+    <link rel="icon" href="../IMG/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/diseñoGral.css">
+    <link rel="stylesheet" href="../CSS/Carrito.css">
+    <link rel="icon" type="icon/x-image" href="../IMG/logo-tienda.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <title>Carrito de compras</title>
+</head>
+
+<body>
+ 
+    <main>
+<!------------HEADER-------------------->
+<header>
+  <div class="header-logo">
+      <img src="../IMG/logo-tienda.svg" alt="Este es un logo">
+  </div>
+
+  <div class="carrito-comp">
+      <div>
+          <a href="Carrito.html">
+              <img src="../IMG/icono-carrito.svg" alt="Carrito de compras" >
+          </a>
+      </div>
+  </div>
+
+</header>
+
+
+<div class="header-nav">
+  <nav>
+      <ul>
+          <li><a href="../index.html">Principal</a>
+          </li>
+
+          <li><a href="./Camisas.html">Camisas</a>
+          </li>
+
+          <li><a href="./Bufandas.html">Bufandas</a>
+          </li>
+
+          <li><a href="./Faldas.html">Faldas</a>
+          </li>
+
+          <li id="liDerecha"><a href="./contacto.html">Contacto</a>
+          </li>
+
+      </ul>
+  </nav>
+</div>
+<!---------------------------textos-------------------->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col textos-seccion" >
+                <h1>Mi carrito</h1>
+                
+                </div>
+            </div>
+        </div>
+
+        <!----------------------MODAL------------------------- -->
+
+        <div class="modal-checkout" id="modal-checkout">
+          <div class="contenedor-modal">
+
+              <div class="contenedor-botonC-modal">
+                  <button type="button" data-close>x</button>
+              </div>
+
+
+              <div id="lienzo-modal-check"></div>
+          </div>
+      </div>
+     
+       
+    
+<!--------------------------CUERPO PAGINA------------------------------------>
+
+        <div class="seccion-tabla container">
+            <table class="tabla-desc table">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto y Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+
+                <tbody id="lienzo-carrito" class="lienzo-carrito">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="section-total col-lg-12 col-md-12 col-sm-12">
+                    <div class="monto-total">
+                        <output id="out-total"></output>
+                    </div>
+                </div>
+                
+                <div class="contenedor-botones col-lg-12 col-md-12 col-sm-12">
+            
+                    <button type="button"> <a href="./Camisas.html">Volver a la tienda</a></button>
+                    <button type="button" id="btn-comprar" data-open="modal-checkout">Comprar</button>
+                </div>
+            </div>
+    </main>
+
+    <!--------------------footer --------------------->
+    <footer class="text-center pt-5">
+        <!-- Grid container -->
+        <div class="container-fluid  p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4 ">
+              <h5 class="text-uppercase mb-0 mb-3">Nuestros Productos</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="./Camisas.html" class="text-dark">Camisas</a>
+                </li>
+                <li>
+                  <a href="./Bufandas.html" class="text-dark">Bufandas</a>
+                </li>
+                <li>
+                  <a href="./Faldas.html" class="text-dark">Faldas</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4 ">
+              <h5 class="text-uppercase mb-3">Contactanos</h5>
+      
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark me-0">
+                    <i class="fa-solid fa-mobile-retro mr-2"></i>
+                    541144114477
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark ms-4">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Text@hotmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark me-0">
+                    <i class="fa-solid fa-location-pin"></i>
+                    San justo,Bs As</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-4 mb-4">
+              <h5 class="text-uppercase  mb-3">Seguinos</h5>
+      
+              <ul class="list-unstyled d-inline-flex  ms-3">
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="pe-4">
+                  <a href="#!" class="text-dark">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" id="copyright">
+           <a class=" text-dark text-uppercase ">   © 2022 Copyright  </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+     
+
+    <script src="../JS/JQuery/jquery-3.6.0.min.js"></script>
+    <script src="../JS/Bootstrap/bootstrap.min.js"></script>
+    <script src="../JS/Inventario.js"></script>
+    <script src="../JS/Carrito.js"></script>
+  
+
+    <script
+    src="https://kit.fontawesome.com/d4827d7cda.js"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+
+</html>
